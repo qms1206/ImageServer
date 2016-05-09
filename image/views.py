@@ -12,7 +12,7 @@ def upload(request):
         reqfile = request.FILES['picfile']
         img = Image.open(reqfile)
         # img.thumbnail((500, 500), Image.ANTIALIAS)
-        img.save("h:/a.png", "png")
+        img.save("../a.png", "png")
         return HttpResponse('ok!');
 
 def init(request):
